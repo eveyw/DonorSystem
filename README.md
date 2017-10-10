@@ -29,6 +29,7 @@ MA, CT, ME)
 
 The program initially prompt the user to make a selection by typing one of the following commands,
 with the following effects:
+
 • Type “Login” to have the user present a userid and password, and to proceed to a 2nd-level menu (see
 below). The userid and password that the user presents should be checked for inclusion in the current set
 of donor accounts.
@@ -95,7 +96,9 @@ This program read arguments from the command line to support the following inter
 
 The <max donors> parameter specifies the largest number of donors that your program will accept. The
 <filename> parameter indicates the name of a file from which to read initial donor database information.
-The user may omit the <filename> parameter, but must specify a <max donors> value that falls between1 and 1000. So, for example, the user may run your program as follows, to support an initially empty donor
+The user may omit the <filename> parameter, but must specify a <max donors> value that falls between1 and 1000. 
+
+So, for example, the user may run your program as follows, to support an initially empty donor
 database that can hold information for up to 25 donors:
 
 $ ./Donate 25
@@ -111,10 +114,11 @@ equivalently “pointer to an array of character pointers.” Base your solution
 on the simple example in Blackboard.
 
 Design
+
 Create two C++ classes, one for Donor objects, and one for a single DonorDatabase object. Each C++
-class should have an associated .h file and a.cpp file to hold the class definition and member function
-implementations, respectively. File names should match the class names, so you should have
+class have an associated .h file and a.cpp file to hold the class definition and member function
+implementations, respectively. File names match the class names, we have
 DonorDatabase.cpp, DonorDatabase.h, Donor.cpp, and Donor.h. Set up makefile to
 build DonorDatabase.o from the code for the DonorDatabase class, and Donor.o from the code for the
-Donor class, then link those object code files against a third file that includes your compiled main() program and link everything into a single executable called “Donate”.
+Donor class, then link those object code files against a third file that includes compiled main() program and link everything into a single executable called “Donate”.
 
