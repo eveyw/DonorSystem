@@ -90,14 +90,19 @@ and react appropriately to as many malformed inputs as possible.
 
 Command Line Arguments
 This program read arguments from the command line to support the following interface:
+
 ./Donate <max donors> <filename>
+
 The <max donors> parameter specifies the largest number of donors that your program will accept. The
 <filename> parameter indicates the name of a file from which to read initial donor database information.
 The user may omit the <filename> parameter, but must specify a <max donors> value that falls between1 and 1000. So, for example, the user may run your program as follows, to support an initially empty donor
 database that can hold information for up to 25 donors:
+
 $ ./Donate 25
+
 Or the user may run your program to support a donor database that can hold up to 100 donors, with initial donor
 information found in the file named mydonors.txt, as follows:
+
 $ ./Donate 100 mydonors.txt
 
 To support command line arguments in C++, parse the argc and argv parameters passed to main(). This
